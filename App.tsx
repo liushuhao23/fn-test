@@ -124,7 +124,8 @@ function App(): JSX.Element {
   };
 
   return (
-    <SafeAreaView style={backgroundStyle}>
+    // <SafeAreaView style={backgroundStyle}>
+    <SafeAreaView>
       <StatusBar
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
@@ -136,7 +137,7 @@ function App(): JSX.Element {
           alignItems: 'center',
           justifyContent: 'center',
         }}>
-        <Well></Well>
+        <Well />
       </View>
     </SafeAreaView>
   );
